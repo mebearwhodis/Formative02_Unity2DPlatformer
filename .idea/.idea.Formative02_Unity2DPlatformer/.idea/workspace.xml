@@ -4,7 +4,36 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bdd91d28-74d4-48f0-8962-d52488e52b8e" name="Changes" comment="" />
+    <list default="true" id="bdd91d28-74d4-48f0-8962-d52488e52b8e" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Formative02_Unity2DPlatformer/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Formative02_Unity2DPlatformer/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/Enemies/Beetle/Dead.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/Enemies/Beetle/Dead.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/Enemies/Beetle/DeadImpact.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/Enemies/Beetle/DeadImpact.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/Enemies/Beetle/monster4.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/Enemies/Beetle/monster4.controller" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/Player/Climbing.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/Player/Climbing.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/Player/Player.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/Player/Player.controller" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Cainos/Pixel Art Platformer - Dungeon/Patch - URP 2D Lit.unitypackage.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/DefaultVolumeProfile.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/DefaultVolumeProfile.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Pixel Monsters Vol2/Sprites/monster 15/m15_Attack.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Pixel Monsters Vol2/Sprites/monster 15/m15_Attack.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Pixel Monsters Vol2/Sprites/monster 15/m15_Dead.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Pixel Monsters Vol2/Sprites/monster 15/m15_Dead.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Pixel Monsters Vol2/Sprites/monster 15/m15_Hit.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Pixel Monsters Vol2/Sprites/monster 15/m15_Hit.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Pixel Monsters Vol2/Sprites/monster 15/m15_Idle.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Pixel Monsters Vol2/Sprites/monster 15/m15_Idle.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Pixel Monsters Vol2/Sprites/monster 4/m4_Alert.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Pixel Monsters Vol2/Sprites/monster 4/m4_Alert.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Pixel Monsters Vol2/Sprites/monster 4/m4_Attack.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Pixel Monsters Vol2/Sprites/monster 4/m4_Attack.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Pixel Monsters Vol2/Sprites/monster 4/m4_Blink.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Pixel Monsters Vol2/Sprites/monster 4/m4_Blink.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Pixel Monsters Vol2/Sprites/monster 4/m4_Dead.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Pixel Monsters Vol2/Sprites/monster 4/m4_Dead.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Pixel Monsters Vol2/Sprites/monster 4/m4_DeadImpact.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Pixel Monsters Vol2/Sprites/monster 4/m4_DeadImpact.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Pixel Monsters Vol2/Sprites/monster 4/m4_Hit.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Pixel Monsters Vol2/Sprites/monster 4/m4_Hit.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Pixel Monsters Vol2/Sprites/monster 4/m4_Run.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Pixel Monsters Vol2/Sprites/monster 4/m4_Run.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/EnemyMovement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/EnemyMovement.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tiles/Dungeon Solid Palette.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Tiles/Dungeon Solid Palette.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tiles/Dungeon Solid Rule Tile.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Tiles/Dungeon Solid Rule Tile.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tiles/Interactive Palette.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Tiles/Interactive Palette.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/Physics2DSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/Physics2DSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/ShaderGraphSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ShaderGraphSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -15,8 +44,7 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/EnemyMovement.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/../../SAE_923_Module2/UnityTraining/Platformer2D/Platformer2D/Assets/Scripts/Jumping.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/../../SAE_923_Module2/UnityTraining/Platformer2D/Platformer2D/Assets/Scripts/PlayerController1.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/PlayerDeath.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -34,6 +62,7 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "main",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -44,15 +73,15 @@
   },
   "keyToStringList": {
     "rider.external.source.directories": [
-      "C:\\Users\\ratdo\\AppData\\Roaming\\JetBrains\\Rider2023.3\\resharper-host\\DecompilerCache",
-      "C:\\Users\\ratdo\\AppData\\Roaming\\JetBrains\\Rider2023.3\\resharper-host\\SourcesCache",
-      "C:\\Users\\ratdo\\AppData\\Local\\Symbols\\src"
+      "C:\\Users\\rochm\\AppData\\Roaming\\JetBrains\\Rider2023.2\\resharper-host\\DecompilerCache",
+      "C:\\Users\\rochm\\AppData\\Roaming\\JetBrains\\Rider2023.2\\resharper-host\\SourcesCache",
+      "C:\\Users\\rochm\\AppData\\Local\\Symbols\\src"
     ]
   }
 }]]></component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="Start Unity" type="RunUnityExe" factoryName="Unity Executable">
-      <option name="EXE_PATH" value="D:\Unity Editor\2023.2.1f1\Editor\Unity.exe" />
+      <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\Editor\2023.2.1f1\Editor\Unity.exe" />
       <option name="PROGRAM_PARAMETERS" value="-projectPath D:\SAE_923_Cours\SAE_923_Formatives\Formative02_Unity2DPlatformer -debugCodeOptimization" />
       <option name="WORKING_DIRECTORY" value="D:\SAE_923_Cours\SAE_923_Formatives\Formative02_Unity2DPlatformer" />
       <option name="PASS_PARENT_ENVS" value="1" />
@@ -60,7 +89,7 @@
       <method v="2" />
     </configuration>
     <configuration name="Unit Tests (batch mode)" type="RunUnityExe" factoryName="Unity Executable">
-      <option name="EXE_PATH" value="D:\Unity Editor\2023.2.1f1\Editor\Unity.exe" />
+      <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\Editor\2023.2.1f1\Editor\Unity.exe" />
       <option name="PROGRAM_PARAMETERS" value="-runTests -batchmode -projectPath D:\SAE_923_Cours\SAE_923_Formatives\Formative02_Unity2DPlatformer -testResults Logs/results.xml -testPlatform EditMode -debugCodeOptimization" />
       <option name="WORKING_DIRECTORY" value="D:\SAE_923_Cours\SAE_923_Formatives\Formative02_Unity2DPlatformer" />
       <option name="PASS_PARENT_ENVS" value="1" />
@@ -99,6 +128,7 @@
       <workItem from="1703015738104" duration="56000" />
       <workItem from="1703015827860" duration="24000" />
       <workItem from="1703015896743" duration="7613000" />
+      <workItem from="1703061943497" duration="13266000" />
     </task>
     <servers />
   </component>

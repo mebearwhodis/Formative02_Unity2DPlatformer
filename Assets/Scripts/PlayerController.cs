@@ -29,7 +29,7 @@ public class PlayerController : MonoBehaviour
         _sr = GetComponent<SpriteRenderer>();
         _animator = GetComponent<Animator>();
         _cc2d = GetComponent<CapsuleCollider2D>();
-        _bc2d = GetComponent<BoxCollider2D>();
+        _bc2d = GetComponentInChildren<BoxCollider2D>();
         baseGravity = _rb.gravityScale;
         //_groundedDetector = GetComponentInChildren<GroundDetector>();
     }
@@ -110,13 +110,15 @@ public class PlayerController : MonoBehaviour
             _animator.SetBool("isClimbing", false);
             return;
         }
-        else if (playerMovingVertically && _cc2d.IsTouchingLayers(LayerMask.GetMask("Interactive")))
+        else if (_bc2d.IsTouchingLayers(LayerMask.GetMask("Interactive")))
         {
+            _animator.SetBool("isClimbing", true);
+            _animator.SetFloat("ClimbSpeed", !playerMovingVertically ? 0f : 1f);
             _rb.velocityY = Input.GetAxis("Vertical") * _climbSpeed * Time.fixedDeltaTime;
             _rb.gravityScale = 0; 
+            pressedJump = false;
         }
 
-        _animator.SetBool("isClimbing", playerMovingVertically);
         
     }
 }
