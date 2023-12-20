@@ -9,17 +9,24 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private float _moveSpeed = 10f;
     [SerializeField] private float _jumpForce = 10f;
     [SerializeField] private float _climbSpeed = 10f;
+    [SerializeField] private float maxJumpHeight = 3f;
+    [SerializeField] private CapsuleCollider2D _cc2d;
+    [SerializeField] private float _respawnX;
+    [SerializeField] private float _respawnY;
+    [SerializeField] private Vector2 deathKnockback = new Vector2 (10f, 10f);
+    
+    
+    public bool pressedJump = false;
+    public bool releasedJump = false;
+    private bool isAlive = true;
+    private float startingYposition;
+    private float baseGravity;
+    private Vector2 _startingPos;
+    private Vector2 _respawnPos;
     private Rigidbody2D _rb;
     private Animator _animator;
     private SpriteRenderer _sr;
-    private CapsuleCollider2D _cc2d;
     private BoxCollider2D _bc2d;
-    [SerializeField] private float maxJumpHeight = 3f;
-
-    private float startingYposition;
-    private float baseGravity;
-    public bool pressedJump = false;
-    public bool releasedJump = false;
 
     //private GroundDetector _groundedDetector;
     // Start is called before the first frame update
@@ -37,6 +44,10 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     private void Update()
     {
+        _respawnPos = new Vector2(_respawnX, _respawnY); 
+        
+        if (!isAlive) {return;}
+        
         if (Input.GetButtonDown("Jump"))
         {
             pressedJump = true;
@@ -47,9 +58,11 @@ public class PlayerController : MonoBehaviour
         }
 
         ClimbLadder();
+        Die();
     }
     void FixedUpdate()
     {
+        if (!isAlive) {return;}
         //Left Right
         _rb.velocityX = Input.GetAxis("Horizontal") * _moveSpeed * Time.fixedDeltaTime;
 
@@ -87,6 +100,7 @@ public class PlayerController : MonoBehaviour
     {
         if (!_bc2d.IsTouchingLayers(LayerMask.GetMask("Solid")))
         {
+            pressedJump = false;
             return;
         }
         startingYposition = transform.position.y;
@@ -121,4 +135,38 @@ public class PlayerController : MonoBehaviour
 
         
     }
+
+    private void Die()
+    {
+        if (_cc2d.IsTouchingLayers(LayerMask.GetMask("Enemies", "Traps")) && !_bc2d.IsTouchingLayers(LayerMask.GetMask("Enemies")))
+        {
+            isAlive = false;
+            StartCoroutine(Respawn());
+        }
+    }
+
+    private IEnumerator Respawn()
+    {
+        _animator.SetTrigger("isDying");
+        _rb.velocity = deathKnockback; 
+        
+        yield return new WaitForSeconds (.75f);
+        _rb.gravityScale = 0;
+        _rb.velocity = new Vector2(0, 0);
+        
+        yield return new WaitForSeconds (1);
+        _rb.transform.position = _respawnPos;
+        isAlive = true;
+        _rb.gravityScale = baseGravity;
+        _animator.SetTrigger("hasRespawned");
+    }
+
+    // private void OnTriggerEnter2D(Collider2D other)
+    // {
+    //     if (other.CompareTag("Deadly"))
+    //     {
+    //         _rb.transform.position = _respawnPos;
+    //         isAlive = true;
+    //     }
+    // }
 }

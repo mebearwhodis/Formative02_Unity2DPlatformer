@@ -20,7 +20,7 @@ TagManager:
   - Background
   - Enemies
   - Flavour
-  - Stairs
+  - Traps
   - Feet
   - 
   - 
@@ -50,14 +50,14 @@ TagManager:
   - name: Interactive
     uniqueID: 3765056909
     locked: 0
+  - name: Traps
+    uniqueID: 2513793737
+    locked: 0
   - name: Enemies
     uniqueID: 280218563
     locked: 0
   - name: Solid
     uniqueID: 3194660439
-    locked: 0
-  - name: Stairs
-    uniqueID: 2513793737
     locked: 0
   - name: Flavour
     uniqueID: 520966643

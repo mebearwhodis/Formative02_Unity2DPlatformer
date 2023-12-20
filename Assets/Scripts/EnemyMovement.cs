@@ -19,23 +19,28 @@ public class EnemyMovement : MonoBehaviour
         _cc2d = GetComponent<CapsuleCollider2D>();
         _bc2d = GetComponent<BoxCollider2D>();
         _light = GetComponent<Light2D>();
+        _animator.SetBool("isWalking", true);
     }
 
     void Update()
     {
+        MoveHorizontally();
         _rb.velocity = new Vector2(_moveSpeed, 0f);
-        _animator.SetBool("isWalking", true);
+        GetHit();
     }
-
-    private void OnTriggerExit2D(Collider2D other)
+    
+    private void MoveHorizontally()
     {
-        if (other.CompareTag("Ground"))
+        if (!_bc2d.IsTouchingLayers(LayerMask.GetMask("Solid")))
         {
             _moveSpeed = -_moveSpeed;
             transform.localScale = new Vector2(-(Mathf.Sign(_rb.velocityX)), 1f);
         }
-
-        if (other.CompareTag("Feet"))
+    }
+    
+    private void GetHit()
+    {
+        if (_cc2d.IsTouchingLayers(LayerMask.GetMask("Feet")))
         {
             _animator.SetBool("isWalking", false);
             _animator.SetTrigger("Hit");
@@ -43,9 +48,6 @@ public class EnemyMovement : MonoBehaviour
             _cc2d.enabled = false;
             _bc2d.enabled = false;
             _light.intensity = 0.5f;
-
         }
     }
-
-    
 }
