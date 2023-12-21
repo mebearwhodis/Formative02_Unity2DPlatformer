@@ -22,8 +22,8 @@ TagManager:
   - Flavour
   - Traps
   - Feet
-  - 
-  - 
+  - Checkpoints
+  - End
   - 
   - 
   - 
@@ -61,6 +61,12 @@ TagManager:
     locked: 0
   - name: Flavour
     uniqueID: 520966643
+    locked: 0
+  - name: Checkpoints
+    uniqueID: 1358419767
+    locked: 0
+  - name: End
+    uniqueID: 64346671
     locked: 0
   - name: Player
     uniqueID: 1666648309

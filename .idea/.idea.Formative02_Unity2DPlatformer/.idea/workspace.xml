@@ -6,56 +6,26 @@
   <component name="ChangeListManager">
     <list default="true" id="bdd91d28-74d4-48f0-8962-d52488e52b8e" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Formative02_Unity2DPlatformer/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Formative02_Unity2DPlatformer/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/Enemies/Beetle/monster4.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/Enemies/Beetle/monster4.controller" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/Player/Player.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/Player/Player.controller" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Cainos/Pixel Art Platformer - Dungeon/Prefab/Props/PF Dungeon Props - Spear Trap 01.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Cainos/Pixel Art Platformer - Dungeon/Prefab/Props/PF Dungeon Props - Spear Trap 01.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Cainos/Pixel Art Platformer - Dungeon/Prefab/Props/PF Dungeon Props - Spike Ball 01.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Cainos/Pixel Art Platformer - Dungeon/Prefab/Props/PF Dungeon Props - Spike Ball 01.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Cainos/Pixel Art Platformer - Dungeon/Prefab/Props/PF Dungeon Props - Spike Ball 02.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Cainos/Pixel Art Platformer - Dungeon/Prefab/Props/PF Dungeon Props - Spike Ball 02.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Pixel Monsters Vol2/Animation/monster 15/Attack.anim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Pixel Monsters Vol2/Animation/monster 15/Attack.anim.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Pixel Monsters Vol2/Animation/monster 15/Dead.anim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Pixel Monsters Vol2/Animation/monster 15/Dead.anim.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Pixel Monsters Vol2/Animation/monster 15/Hit.anim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Pixel Monsters Vol2/Animation/monster 15/Hit.anim.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Pixel Monsters Vol2/Animation/monster 15/Idle.anim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Pixel Monsters Vol2/Animation/monster 15/Idle.anim.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Pixel Monsters Vol2/Animation/monster 15/monster15.controller" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Pixel Monsters Vol2/Animation/monster 15/monster15.controller.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Pixel Monsters Vol2/Animation/monster 4/Alert.anim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Pixel Monsters Vol2/Animation/monster 4/Alert.anim.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Pixel Monsters Vol2/Animation/monster 4/Attack.anim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Pixel Monsters Vol2/Animation/monster 4/Attack.anim.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Pixel Monsters Vol2/Animation/monster 4/Blink.anim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Pixel Monsters Vol2/Animation/monster 4/Blink.anim.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Pixel Monsters Vol2/Animation/monster 4/Dead.anim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Pixel Monsters Vol2/Animation/monster 4/Dead.anim.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Pixel Monsters Vol2/Animation/monster 4/DeadImpact.anim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Pixel Monsters Vol2/Animation/monster 4/DeadImpact.anim.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Pixel Monsters Vol2/Animation/monster 4/Hit.anim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Pixel Monsters Vol2/Animation/monster 4/Hit.anim.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Pixel Monsters Vol2/Animation/monster 4/Idle.anim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Pixel Monsters Vol2/Animation/monster 4/Idle.anim.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Pixel Monsters Vol2/Animation/monster 4/Run.anim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Pixel Monsters Vol2/Animation/monster 4/Run.anim.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Pixel Monsters Vol2/Animation/monster 4/Walk.anim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Pixel Monsters Vol2/Animation/monster 4/Walk.anim.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Pixel Monsters Vol2/Animation/monster 4/monster4.controller" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Pixel Monsters Vol2/Animation/monster 4/monster4.controller.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Beetle (Enemy).prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Beetle (Enemy).prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/PF Dungeon Props - Ladder 01 C.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/PF Dungeon Props - Ladder 01 C.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Writhing Mass (Enemy).prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Writhing Mass (Enemy).prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Cainos/Pixel Art Platformer - Dungeon/Patch - URP 2D Lit.unitypackage.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Cainos/Pixel Art Platformer - Dungeon/Prefab/Props/PF Dungeon Props - Door Iron 01.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Cainos/Pixel Art Platformer - Dungeon/Prefab/Props/PF Dungeon Props - Door Iron 01.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Cainos/Pixel Art Platformer - Dungeon/Prefab/Props/PF Dungeon Props - Door Wood 01.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Cainos/Pixel Art Platformer - Dungeon/Prefab/Props/PF Dungeon Props - Door Wood 01.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Cainos/Pixel Art Platformer - Dungeon/Prefab/Props/PF Dungeon Props - Gate 01.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Cainos/Pixel Art Platformer - Dungeon/Prefab/Props/PF Dungeon Props - Gate 01.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Cainos/Pixel Art Platformer - Dungeon/Prefab/Props/PF Dungeon Props - Switch 01.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Cainos/Pixel Art Platformer - Dungeon/Prefab/Props/PF Dungeon Props - Switch 01.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Cainos/Pixel Art Platformer - Dungeon/Prefab/Props/PF Dungeon Props - Wall Altar 01.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Cainos/Pixel Art Platformer - Dungeon/Prefab/Props/PF Dungeon Props - Wall Altar 01.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Pixel Monsters Vol2/Sprites/monster 10/m10_Attack1.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Pixel Monsters Vol2/Sprites/monster 10/m10_Attack1.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Pixel Monsters Vol2/Sprites/monster 10/m10_Attack2.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Pixel Monsters Vol2/Sprites/monster 10/m10_Attack2.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Pixel Monsters Vol2/Sprites/monster 10/m10_Blink.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Pixel Monsters Vol2/Sprites/monster 10/m10_Blink.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Pixel Monsters Vol2/Sprites/monster 10/m10_Dead.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Pixel Monsters Vol2/Sprites/monster 10/m10_Dead.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Pixel Monsters Vol2/Sprites/monster 10/m10_Hit.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Pixel Monsters Vol2/Sprites/monster 10/m10_Hit.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Pixel Monsters Vol2/Sprites/monster 10/m10_Idle.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Pixel Monsters Vol2/Sprites/monster 10/m10_Idle.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Pixel Monsters Vol2/Sprites/monster 10/m10_Jump.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Pixel Monsters Vol2/Sprites/monster 10/m10_Jump.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Pixel Monsters Vol2/Sprites/monster 10/m10_Run.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Pixel Monsters Vol2/Sprites/monster 10/m10_Run.png.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/EnemyMovement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/EnemyMovement.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerDeath.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerDeath.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/Physics2DSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/Physics2DSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tiles/Interactive Palette.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Tiles/Interactive Palette.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -67,9 +37,8 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Checkpoint.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/EnemyMovement.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/PlayerDeath.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/../../SAE_923_Module2/UnityTraining/Platformer2D/Platformer2D/Assets/Scripts/Jumping.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -94,19 +63,20 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.sourceCode.C#",
     "vue.rearranger.settings.migration": "true"
   },
   "keyToStringList": {
     "rider.external.source.directories": [
-      "C:\\Users\\ratdo\\AppData\\Roaming\\JetBrains\\Rider2023.3\\resharper-host\\DecompilerCache",
-      "C:\\Users\\ratdo\\AppData\\Roaming\\JetBrains\\Rider2023.3\\resharper-host\\SourcesCache",
-      "C:\\Users\\ratdo\\AppData\\Local\\Symbols\\src"
+      "C:\\Users\\rochm\\AppData\\Roaming\\JetBrains\\Rider2023.2\\resharper-host\\DecompilerCache",
+      "C:\\Users\\rochm\\AppData\\Roaming\\JetBrains\\Rider2023.2\\resharper-host\\SourcesCache",
+      "C:\\Users\\rochm\\AppData\\Local\\Symbols\\src"
     ]
   }
 }]]></component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="Start Unity" type="RunUnityExe" factoryName="Unity Executable">
-      <option name="EXE_PATH" value="D:\Unity Editor\2023.2.1f1\Editor\Unity.exe" />
+      <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\Editor\2023.2.1f1\Editor\Unity.exe" />
       <option name="PROGRAM_PARAMETERS" value="-projectPath D:\SAE_923_Cours\SAE_923_Formatives\Formative02_Unity2DPlatformer -debugCodeOptimization" />
       <option name="WORKING_DIRECTORY" value="D:\SAE_923_Cours\SAE_923_Formatives\Formative02_Unity2DPlatformer" />
       <option name="PASS_PARENT_ENVS" value="1" />
@@ -114,7 +84,7 @@
       <method v="2" />
     </configuration>
     <configuration name="Unit Tests (batch mode)" type="RunUnityExe" factoryName="Unity Executable">
-      <option name="EXE_PATH" value="D:\Unity Editor\2023.2.1f1\Editor\Unity.exe" />
+      <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\Editor\2023.2.1f1\Editor\Unity.exe" />
       <option name="PROGRAM_PARAMETERS" value="-runTests -batchmode -projectPath D:\SAE_923_Cours\SAE_923_Formatives\Formative02_Unity2DPlatformer -testResults Logs/results.xml -testPlatform EditMode -debugCodeOptimization" />
       <option name="WORKING_DIRECTORY" value="D:\SAE_923_Cours\SAE_923_Formatives\Formative02_Unity2DPlatformer" />
       <option name="PASS_PARENT_ENVS" value="1" />
@@ -155,6 +125,7 @@
       <workItem from="1703015896743" duration="7613000" />
       <workItem from="1703061943497" duration="13266000" />
       <workItem from="1703098130008" duration="5251000" />
+      <workItem from="1703153215033" duration="6885000" />
     </task>
     <servers />
   </component>

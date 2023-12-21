@@ -44,7 +44,7 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     private void Update()
     {
-        _respawnPos = new Vector2(_respawnX, _respawnY); 
+       // _respawnPos = new Vector2(_respawnX, _respawnY); 
         
         if (!isAlive) {return;}
         
@@ -58,8 +58,10 @@ public class PlayerController : MonoBehaviour
         }
 
         ClimbLadder();
+        ActivateCheckpoint();
         Die();
     }
+
     void FixedUpdate()
     {
         if (!isAlive) {return;}
@@ -136,9 +138,35 @@ public class PlayerController : MonoBehaviour
         
     }
 
+    //TODO: set respawn point in the middle of the sprite + Lit it (use animation with a trigger)
+    private void ActivateCheckpoint()
+    {
+        if(_cc2d.IsTouchingLayers(LayerMask.GetMask("Checkpoints")))
+        {
+            _respawnPos = new Vector2(_rb.transform.position.x, _rb.transform.position.y);
+        }
+    }
+
+   //TODO: use animation to open door on BOOL "isOpened" getting key
+    private void OpenDoor()
+    {
+        if(_cc2d.IsTouchingLayers(LayerMask.GetMask("Key")))
+        {
+           
+        }
+    }
+    //TODO: End Level when touching OpenDoor
+    private void ExitLevel()
+    {
+        if(_cc2d.IsTouchingLayers(LayerMask.GetMask("Key")))
+        {
+           
+        }
+    }
+    
     private void Die()
     {
-        if (_cc2d.IsTouchingLayers(LayerMask.GetMask("Enemies", "Traps")) && !_bc2d.IsTouchingLayers(LayerMask.GetMask("Enemies")))
+        if (_cc2d.IsTouchingLayers(LayerMask.GetMask("Enemies", "Traps")) /* && !_bc2d.IsTouchingLayers(LayerMask.GetMask("Enemies"))*/)
         {
             isAlive = false;
             StartCoroutine(Respawn());
@@ -148,13 +176,15 @@ public class PlayerController : MonoBehaviour
     private IEnumerator Respawn()
     {
         _animator.SetTrigger("isDying");
+        deathKnockback.x *= Mathf.Sign(_rb.velocityX);
         _rb.velocity = deathKnockback; 
         
-        yield return new WaitForSeconds (.75f);
+        yield return new WaitForSeconds (.65f);
         _rb.gravityScale = 0;
         _rb.velocity = new Vector2(0, 0);
         
         yield return new WaitForSeconds (1);
+        //_rb.velocity = new Vector2(0, 0);
         _rb.transform.position = _respawnPos;
         isAlive = true;
         _rb.gravityScale = baseGravity;
