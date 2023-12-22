@@ -7,6 +7,12 @@ TagManager:
   - Deadly
   - Ground
   - Feet
+  - Checkpoint
+  - Exit
+  - Lives
+  - Timer
+  - HUD
+  - Ladder
   layers:
   - Default
   - TransparentFX
@@ -24,7 +30,7 @@ TagManager:
   - Feet
   - Checkpoints
   - End
-  - 
+  - Collectibes
   - 
   - 
   - 
@@ -67,6 +73,9 @@ TagManager:
     locked: 0
   - name: End
     uniqueID: 64346671
+    locked: 0
+  - name: Collectibes
+    uniqueID: 2442388279
     locked: 0
   - name: Player
     uniqueID: 1666648309

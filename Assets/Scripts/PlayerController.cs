@@ -1,35 +1,32 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
-using UnityEditor.Experimental.GraphView;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour
 {
     [SerializeField] private float _moveSpeed = 10f;
     [SerializeField] private float _jumpForce = 10f;
     [SerializeField] private float _climbSpeed = 10f;
-    [SerializeField] private float maxJumpHeight = 3f;
-    [SerializeField] private CapsuleCollider2D _cc2d;
-    [SerializeField] private float _respawnX;
-    [SerializeField] private float _respawnY;
-    [SerializeField] private Vector2 deathKnockback = new Vector2 (10f, 10f);
+    [SerializeField] private float _maxJumpHeight = 3f;
+    [SerializeField] private Vector2 _deathKnockback = new Vector2 (10f, 10f);
     
-    
+    public int _playerLives = 3;
     public bool pressedJump = false;
     public bool releasedJump = false;
-    private bool isAlive = true;
+    public bool isAlive = true;
     private float startingYposition;
-    private float baseGravity;
+    [SerializeField] private float baseGravity;
     private Vector2 _startingPos;
     private Vector2 _respawnPos;
     private Rigidbody2D _rb;
     private Animator _animator;
     private SpriteRenderer _sr;
     private BoxCollider2D _bc2d;
+    private CapsuleCollider2D _cc2d;
 
-    //private GroundDetector _groundedDetector;
-    // Start is called before the first frame update
     void Start()
     {
         _rb = GetComponent<Rigidbody2D>();        
@@ -38,13 +35,12 @@ public class PlayerController : MonoBehaviour
         _cc2d = GetComponent<CapsuleCollider2D>();
         _bc2d = GetComponentInChildren<BoxCollider2D>();
         baseGravity = _rb.gravityScale;
-        //_groundedDetector = GetComponentInChildren<GroundDetector>();
+        _playerLives = 5;
     }
 
     // Update is called once per frame
     private void Update()
     {
-       // _respawnPos = new Vector2(_respawnX, _respawnY); 
         
         if (!isAlive) {return;}
         
@@ -58,7 +54,6 @@ public class PlayerController : MonoBehaviour
         }
 
         ClimbLadder();
-        ActivateCheckpoint();
         Die();
     }
 
@@ -88,7 +83,7 @@ public class PlayerController : MonoBehaviour
         { 
             StartJump();
         }
-        else if (releasedJump || (transform.position.y - startingYposition) > maxJumpHeight)
+        else if (releasedJump || (transform.position.y - startingYposition) > _maxJumpHeight)
         {
             pressedJump = false;
             StopJump();
@@ -118,7 +113,7 @@ public class PlayerController : MonoBehaviour
 
     private void ClimbLadder()
     {
-        //Make it so the player ignores the ladder if not pressing up or down
+        //Make it so the player ignores the ladder if not pressing up or down??
         var playerMovingVertically = Mathf.Abs(_rb.velocityY) > Mathf.Epsilon;
         if (!_bc2d.IsTouchingLayers(LayerMask.GetMask("Interactive")))
         {
@@ -138,29 +133,36 @@ public class PlayerController : MonoBehaviour
         
     }
 
-    //TODO: set respawn point in the middle of the sprite + Lit it (use animation with a trigger)
-    private void ActivateCheckpoint()
+
+    private void OnTriggerEnter2D(Collider2D other)
     {
-        if(_cc2d.IsTouchingLayers(LayerMask.GetMask("Checkpoints")))
+        if (other.gameObject.CompareTag("Checkpoint"))
         {
-            _respawnPos = new Vector2(_rb.transform.position.x, _rb.transform.position.y);
+            Animator _otherAnimator = other.gameObject.GetComponent<Animator>();
+            _otherAnimator.SetTrigger("ActivateCheckpoint");
+            Vector2 checkpointPos =
+                new Vector2(other.gameObject.transform.position.x, other.gameObject.transform.position.y);
+            _respawnPos = checkpointPos;
+        }
+
+        if (other.gameObject.CompareTag("Ladder"))
+        {
+            var playerMovingVertically = Mathf.Abs(_rb.velocityY) > Mathf.Epsilon;
+            _animator.SetBool("isClimbing", true);
+            _animator.SetFloat("ClimbSpeed", !playerMovingVertically ? 0f : 1f);
+            _rb.velocityY = Input.GetAxis("Vertical") * _climbSpeed * Time.fixedDeltaTime;
+            _rb.gravityScale = 0;
+            pressedJump = false;
         }
     }
 
-   //TODO: use animation to open door on BOOL "isOpened" getting key
-    private void OpenDoor()
+    private void OnTriggerExit2D(Collider2D other)
     {
-        if(_cc2d.IsTouchingLayers(LayerMask.GetMask("Key")))
+        if (other.gameObject.CompareTag("Ladder"))
         {
-           
-        }
-    }
-    //TODO: End Level when touching OpenDoor
-    private void ExitLevel()
-    {
-        if(_cc2d.IsTouchingLayers(LayerMask.GetMask("Key")))
-        {
-           
+            _rb.gravityScale = baseGravity;
+            _animator.SetBool("isClimbing", false);
+            return;
         }
     }
     
@@ -168,16 +170,24 @@ public class PlayerController : MonoBehaviour
     {
         if (_cc2d.IsTouchingLayers(LayerMask.GetMask("Enemies", "Traps")) /* && !_bc2d.IsTouchingLayers(LayerMask.GetMask("Enemies"))*/)
         {
-            isAlive = false;
-            StartCoroutine(Respawn());
+            if (_playerLives > 0)
+            {
+                _playerLives--;
+                isAlive = false;
+                StartCoroutine(Respawn());
+            }
+            else
+            {
+                SceneManager.LoadScene(1);
+            }
         }
     }
 
     private IEnumerator Respawn()
     {
         _animator.SetTrigger("isDying");
-        deathKnockback.x *= Mathf.Sign(_rb.velocityX);
-        _rb.velocity = deathKnockback; 
+        _deathKnockback.x *= Mathf.Sign(_rb.velocityX);
+        _rb.velocity = _deathKnockback; 
         
         yield return new WaitForSeconds (.65f);
         _rb.gravityScale = 0;
@@ -191,12 +201,4 @@ public class PlayerController : MonoBehaviour
         _animator.SetTrigger("hasRespawned");
     }
 
-    // private void OnTriggerEnter2D(Collider2D other)
-    // {
-    //     if (other.CompareTag("Deadly"))
-    //     {
-    //         _rb.transform.position = _respawnPos;
-    //         isAlive = true;
-    //     }
-    // }
 }

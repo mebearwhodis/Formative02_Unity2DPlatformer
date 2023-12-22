@@ -10,6 +10,5 @@ AssetOrigin:
   productId: 237109
   packageName: Pixel Art Platformer - Dungeon
   packageVersion: 1.1.0
-  assetPath: Assets/Cainos/Pixel Art Platformer - Dungeon/Prefab/Props/PF Dungeon
-    Props - Spike Ball 02.prefab
+  assetPath: Assets/Prefabs/Traps/PF Dungeon Props - Spike Ball 02.prefab
   uploadId: 592259
